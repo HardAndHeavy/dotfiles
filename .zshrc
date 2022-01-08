@@ -5,6 +5,9 @@
 if [ "$TMUX" = "" ]; then tmux; fi
 
 if [ -d "/projects" ]; then cd /projects; fi
+
+alias vi="nvim"
+alias vim="nvim"
 # }}hardandheavy
 
 # Path to your oh-my-zsh installation.
