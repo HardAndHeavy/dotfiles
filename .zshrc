@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # hardandheavy{{
-if [ "$TMUX" = "" ]; then tmux; fi
+if [[ "$TMUX" = "" && -f "/usr/bin/tmux" ]]; then tmux; fi
 
 if [ -d "/projects" ]; then cd /projects; fi
 
