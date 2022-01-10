@@ -18,9 +18,11 @@ inst-tmux:
 	sudo apt install -yy tmux
 
 link:
-	ln -sf $(PWD)/.tmux.conf ~/.tmux.conf
-	ln -sf $(PWD)/.vimrc ~/.config/nvim/init.vim
-	ln -sf $(PWD)/.zshrc ~/.zshrc
+	ln -sf $(PWD)/files/.tmux.conf ~/.tmux.conf
+	ln -sf $(PWD)/files/.vimrc ~/.config/nvim/init.vim
+	ln -sf $(PWD)/files/.zshrc ~/.zshrc
+	mkdir -p ~/.config/autostart
+	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 
 git-save-credential:
 	git config --global credential.helper store
