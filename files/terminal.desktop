@@ -1,3 +1,5 @@
+# hardandheavy{{
+# Start terminal on login
 [Desktop Entry]
 Type=Application
 Name=Terminal
@@ -5,3 +7,4 @@ Exec=gnome-terminal
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
+# }}hardandheavy
