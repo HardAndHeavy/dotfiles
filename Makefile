@@ -1,7 +1,11 @@
 update-vb:
 	sudo sh /media/cdrom0/VBoxLinuxAdditions.run
 
-prepare: inst-zsh inst-neovim inst-tmux link
+prepare: inst-before inst-zsh inst-neovim inst-tmux link
+
+inst-before:
+	sudo apt update
+	sudo apt install -yy curl
 
 inst-zsh:
 	sudo apt install -yy zsh zsh-syntax-highlighting
@@ -19,6 +23,7 @@ inst-tmux:
 
 link:
 	ln -sf $(PWD)/files/.tmux.conf ~/.tmux.conf
+	mkdir -p ~/.config/nvim
 	ln -sf $(PWD)/files/.vimrc ~/.config/nvim/init.vim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 	mkdir -p ~/.config/autostart

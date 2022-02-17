@@ -1,7 +1,7 @@
 ## Requirements
 
 * Linux
-* git (for automatic installation)
+* git (`sudo apt-get install git`)
 * make (for automatic installation)
 
 ## Setup
