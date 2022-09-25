@@ -5,7 +5,7 @@ prepare: inst-before inst-zsh inst-neovim inst-tmux link
 
 inst-before:
 	sudo apt update
-	sudo apt install -yy curl
+	sudo apt install -yy curl libfuse2
 
 inst-zsh:
 	sudo apt install -yy zsh zsh-syntax-highlighting
