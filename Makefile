@@ -1,6 +1,3 @@
-update-vb:
-	sudo sh /media/cdrom0/VBoxLinuxAdditions.run
-
 prepare: inst-before inst-zsh inst-neovim inst-tmux link
 
 inst-before:

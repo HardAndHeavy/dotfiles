@@ -1,8 +1,6 @@
 # hardandheavy{{
 # Start tmux on zsh starts
 if [[ "$TMUX" = "" && -f "/usr/bin/tmux" ]]; then tmux; fi
-# Go to projects
-if [ -d "/projects" ]; then cd /projects; fi
 # Vim alias
 alias vi="nvim"
 alias vim="nvim"
