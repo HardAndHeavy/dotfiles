@@ -25,6 +25,9 @@ link:
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
+	ln -sf $(PWD)/files/obsidian.desktop ~/.config/autostart/obsidian.desktop
+	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
+	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 
 git-save-credential:
 	git config --global credential.helper store
