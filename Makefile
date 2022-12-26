@@ -29,5 +29,8 @@ link:
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 
+az-link:
+	ln -sf $(PWD)/files/az.config.cfg ~/.config/yandex-disk/config.cfg
+
 git-save-credential:
 	git config --global credential.helper store
