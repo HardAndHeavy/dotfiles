@@ -32,5 +32,8 @@ link:
 az-link:
 	ln -sf $(PWD)/files/az.config.cfg ~/.config/yandex-disk/config.cfg
 
+buki-link:
+	ln -sf $(PWD)/files/buki.config.cfg ~/.config/yandex-disk/config.cfg
+
 git-save-credential:
 	git config --global credential.helper store
