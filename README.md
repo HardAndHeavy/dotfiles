@@ -12,6 +12,10 @@ cd dotfiles
 make prepare
 make link
 ```
+to personal computer
+```
+make [name]-link
+```
 
 ## Vim
 
