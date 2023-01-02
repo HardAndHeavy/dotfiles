@@ -35,6 +35,7 @@ az-link:
 
 buki-link:
 	ln -sf $(PWD)/files/buki.config.cfg ~/.config/yandex-disk/config.cfg
+	sudo ln -sf $(PWD)/files/buki.hosts /etc/hosts
 
 git-save-credential:
 	git config --global credential.helper store
