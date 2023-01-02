@@ -9,8 +9,7 @@
 ```sh
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
-make prepare
-make link
+make inst
 ```
 to personal computer
 ```

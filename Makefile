@@ -1,4 +1,4 @@
-prepare: inst-before inst-zsh inst-neovim inst-tmux link
+inst: inst-before inst-zsh inst-neovim inst-tmux link
 
 inst-before:
 	sudo apt update
