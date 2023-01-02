@@ -28,7 +28,6 @@ link:
 	ln -sf $(PWD)/files/obsidian.desktop ~/.config/autostart/obsidian.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
-	ln -sf data/.ssh ~/.ssh
 
 az-link:
 	ln -sf $(PWD)/files/az.config.cfg ~/.config/yandex-disk/config.cfg
