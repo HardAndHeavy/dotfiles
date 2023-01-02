@@ -4,7 +4,7 @@ if [[ "$TMUX" = "" && -f "/usr/bin/gnome-shell" ]]; then tmux; fi
 # Vim alias
 alias vi="nvim"
 alias vim="nvim"
-export ZDOTDIR="$HOME/.zsh"
+ZDOTDIR="$HOME/.zsh"
 if [ ! -d "$ZDOTDIR" ]; then mkdir -p "$ZDOTDIR"; fi
 # }}hardandheavy
 
@@ -25,3 +25,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+# hardandheavy{{
+PROMPT="%{$fg[cyan]$USER%}%{$fg[green]@%m%} ${PROMPT}"
+# }}hardandheavy
