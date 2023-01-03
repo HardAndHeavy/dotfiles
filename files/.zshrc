@@ -4,8 +4,11 @@ if [[ "$TMUX" = "" && -f "/usr/bin/gnome-shell" ]]; then tmux; fi
 # Vim alias
 alias vi="nvim"
 alias vim="nvim"
-ZDOTDIR="$HOME/.zsh"
+# cache
+export ZDOTDIR="$HOME/.zsh"
 if [ ! -d "$ZDOTDIR" ]; then mkdir -p "$ZDOTDIR"; fi
+# color
+TERM="xterm-256color"
 # }}hardandheavy
 
 # Path to your oh-my-zsh installation.
