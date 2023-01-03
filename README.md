@@ -2,7 +2,7 @@
 
 * Linux
 * git (`sudo apt-get install git`)
-* make (for automatic installation)
+* make (`sudo apt-get install make`)
 
 ## Setup
 
