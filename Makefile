@@ -30,12 +30,12 @@ link:
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 
 az-link:
-	ln -sf $(PWD)/files/az.config.cfg ~/.config/yandex-disk/config.cfg
-	sudo ln -sf $(PWD)/files/az.hosts /etc/hosts
+	ln -sf /data/ydisk/settings/az/config.cfg ~/.config/yandex-disk/config.cfg
+	sudo ln -sf /data/ydisk/setiings/az/hosts /etc/hosts
 
 buki-link:
-	ln -sf $(PWD)/files/buki.config.cfg ~/.config/yandex-disk/config.cfg
-	sudo ln -sf $(PWD)/files/buki.hosts /etc/hosts
+	ln -sf /data/ydisk/settings/buki/config.cfg ~/.config/yandex-disk/config.cfg
+	sudo ln -sf /data/ydisk/setiings/buki/hosts /etc/hosts
 
 git-save-credential:
 	git config --global credential.helper store

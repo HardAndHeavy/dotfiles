@@ -7,8 +7,6 @@ alias vim="nvim"
 # cache
 export ZDOTDIR="$HOME/.zsh"
 if [ ! -d "$ZDOTDIR" ]; then mkdir -p "$ZDOTDIR"; fi
-# color
-TERM="xterm-256color"
 # }}hardandheavy
 
 # Path to your oh-my-zsh installation.
