@@ -31,11 +31,11 @@ link:
 
 az-link:
 	ln -sf /data/ydisk/settings/az/config.cfg ~/.config/yandex-disk/config.cfg
-	sudo ln -sf /data/ydisk/setiings/az/hosts /etc/hosts
+	sudo ln -sf /data/ydisk/settings/az/hosts /etc/hosts
 
 buki-link:
 	ln -sf /data/ydisk/settings/buki/config.cfg ~/.config/yandex-disk/config.cfg
-	sudo ln -sf /data/ydisk/setiings/buki/hosts /etc/hosts
+	sudo ln -sf /data/ydisk/settings/buki/hosts /etc/hosts
 
 git-save-credential:
 	git config --global credential.helper store
