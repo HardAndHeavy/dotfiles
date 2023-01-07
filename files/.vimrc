@@ -19,7 +19,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'windwp/nvim-spectre'
+  Plug 'rebelot/kanagawa.nvim'
 call plug#end()
+
+colorscheme kanagawa
 
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
