@@ -37,5 +37,8 @@ buki-link:
 	ln -sf /data/ydisk/settings/buki/config.cfg ~/.config/yandex-disk/config.cfg
 	sudo ln -sf /data/ydisk/settings/buki/hosts /etc/hosts
 
+vedi-link:
+	sudo ln -sf /data/docker /var/lib/docker
+
 git-save-credential:
 	git config --global credential.helper store
