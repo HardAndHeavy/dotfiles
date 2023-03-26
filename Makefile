@@ -34,7 +34,8 @@ az-link:
 	sudo ln -sf /data/ydisk/settings/az/hosts /etc/hosts
 
 buki-link:
-	ln -sf /data/ydisk/settings/buki/config.cfg ~/.config/yandex-disk/config.cfg
+	ln -sf /data/ydisk/settings/buki/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
+	ln -sf /data/ydisk/settings/buki/.ssh ~/.ssh
 	sudo ln -sf /data/ydisk/settings/buki/hosts /etc/hosts
 
 vedi-link:
