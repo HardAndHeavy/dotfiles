@@ -30,7 +30,8 @@ link:
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 
 az-link:
-	ln -sf /data/ydisk/settings/az/config.cfg ~/.config/yandex-disk/config.cfg
+	ln -sf /data/ydisk/settings/az/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
+	ln -sf /data/ydisk/settings/az/.ssh ~/.ssh
 	sudo ln -sf /data/ydisk/settings/az/hosts /etc/hosts
 
 buki-link:
