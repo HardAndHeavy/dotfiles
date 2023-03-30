@@ -50,3 +50,10 @@ Run `:PlugUpdate` after each pulling (git pull)
 * `<leader> sr` – references
 * `<leader> b` – show buffer list
 * `<leader>S` – search & replace
+
+## Tmux
+
+* `C-b [` - режим копирования. Передвижение с помощью стрелок
+* `C-space` - начало копирования
+* `C-w` - выход из режима копирования, копирование в буфер
+* `C-b ]` - вставить из буфера
