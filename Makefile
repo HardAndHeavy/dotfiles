@@ -33,7 +33,7 @@ az-link:
 	ln -sf /data/ydisk/settings/az/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
 	ln -sf /data/ydisk/settings/az/.ssh ~/.ssh
 	sudo ln -sf /data/ydisk/settings/az/hosts /etc/hosts
-	ln -sf /data/python-data /projects/python/data
+	ln -sf /data/python-data /projects/python-docker/data
 
 buki-link:
 	ln -sf /data/ydisk/settings/buki/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
