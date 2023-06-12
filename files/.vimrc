@@ -48,4 +48,7 @@ nnoremap <leader>so <cmd>Telescope lsp_document_symbols<cr>
 nnoremap <leader>sa <cmd>Telescope lsp_range_code_actions<cr>
 nnoremap <leader>sh <cmd>Telescope help_tags<cr>
 nnoremap <leader>S :lua require('spectre').open()<CR>
+
+vmap cc :norm i#<CR>
+vmap uc :norm ^x<CR>
 " }}hardandheavy
