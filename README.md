@@ -23,6 +23,7 @@ Run `:PlugUpdate` after each pulling (git pull)
 * `<leader>` – Space
 * `:u` - отмена действия
 * `:e!` - перечитать файл
+* `:%s/foo/bar/g` - глобальная замена в файле
 
 ### Moving between visible buffers
 * `<C-h>` – move left or open new left split
