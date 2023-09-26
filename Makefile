@@ -27,6 +27,7 @@ link:
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/obsidian.desktop ~/.config/autostart/obsidian.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
+	ln -sf /data ~/data
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 
 az-link:
