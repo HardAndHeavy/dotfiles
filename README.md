@@ -8,6 +8,8 @@
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
 make inst
+# it is necessary to run the command a second time, because the terminal will change to zsh
+make inst
 ```
 to personal computer
 ```
