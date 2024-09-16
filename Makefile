@@ -28,7 +28,6 @@ desktop-link:
 	sudo ln -sf /data/ydisk/settings/$(name)/hosts /etc/hosts
 	rm -rf ~/.ssh
 	ln -sf /data/ydisk/settings/$(name)/.ssh ~/.ssh
-	ln -sf /data/ydisk/settings/.ssh/config ~/.ssh/config
 
 az-link: desktop-link
 	ln -sf /data/python-data /projects/python-docker/data
