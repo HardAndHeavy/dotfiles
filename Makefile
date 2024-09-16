@@ -1,4 +1,5 @@
-inst: inst-before inst-zsh inst-neovim link
+# Attention! The int-zsh command must be the last one, because after it is executed, the terminal switches to zsh
+inst: inst-before inst-neovim link inst-zsh
 
 inst-before:
 	sudo apt update
@@ -19,19 +20,20 @@ link:
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/obsidian.desktop ~/.config/autostart/obsidian.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
+
+desktop-link:
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 	mkdir -p ~/.config/yandex-disk
+	ln -sf /data/ydisk/settings/$(name)/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
+	sudo ln -sf /data/ydisk/settings/$(name)/hosts /etc/hosts
+	rm -rf ~/.ssh
+	ln -sf /data/ydisk/settings/$(name)/.ssh ~/.ssh
+	ln -sf /data/ydisk/settings/.ssh/config ~/.ssh/config
 
-az-link:
-	ln -sf /data/ydisk/settings/az/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
-	sudo ln -sf /data/ydisk/settings/az/hosts /etc/hosts
+az-link: desktop-link
 	ln -sf /data/python-data /projects/python-docker/data
 
-buki-link:
-	ln -sf /data/ydisk/settings/buki/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
-	rm -rf ~/.ssh
-	ln -sf /data/ydisk/settings/buki/.ssh ~/.ssh
-	sudo ln -sf /data/ydisk/settings/buki/hosts /etc/hosts
+buki-link: desktop-link
 
 vedi-link:
 	sudo ln -sf /data/docker /var/lib/docker
