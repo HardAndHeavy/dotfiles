@@ -37,17 +37,10 @@ map <C-h> <C-w><Left>
 
 nmap <leader>fr <Plug>CtrlSFPrompt
 
-nnoremap <leader>b <cmd>Telescope buffers<cr>
-nnoremap <leader>sf <cmd>Telescope find_files<cr>
-nnoremap <leader>sb <cmd>Telescope current_buffer_fuzzy_find<cr>
-nnoremap <leader>sg <cmd>Telescope live_grep<cr>
-nnoremap <leader>sd <cmd>Telescope diagnostics<cr>
-nnoremap <leader>sc <cmd>Telescope git_commits<cr>
-nnoremap <leader>sr <cmd>Telescope lsp_references<cr>
-nnoremap <leader>so <cmd>Telescope lsp_document_symbols<cr>
-nnoremap <leader>sa <cmd>Telescope lsp_range_code_actions<cr>
-nnoremap <leader>sh <cmd>Telescope help_tags<cr>
-nnoremap <leader>S :lua require('spectre').open()<CR>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 vmap cc :norm i#<CR>
 vmap uc :norm ^x<CR>

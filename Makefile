@@ -10,7 +10,7 @@ inst-zsh:
 	if [ ! -d ~/.oh-my-zsh ]; then sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi
 
 inst-neovim:
-	sudo apt install -yy silversearcher-ag neovim
+	sudo apt install -yy ripgrep neovim
 
 link:
 	mkdir -p ~/.config/nvim
