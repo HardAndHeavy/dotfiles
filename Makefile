@@ -10,11 +10,10 @@ inst-zsh:
 	if [ ! -d ~/.oh-my-zsh ]; then sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi
 
 inst-neovim:
-	sudo apt install -yy ripgrep neovim
+	./install_neovim.sh
 
 link:
-	mkdir -p ~/.config/nvim
-	ln -sf $(PWD)/files/.vimrc ~/.config/nvim/init.vim
+	ln -sf $(PWD)/files/nvim ~/.config/nvim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
