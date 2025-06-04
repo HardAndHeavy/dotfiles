@@ -20,14 +20,23 @@ if grep -q '^PATH=' "$FILE"; then
         *)
             UPDATED_PATH="${CURRENT_PATH}:${NEW_PATH}"
             NEW_LINE="PATH=\"$UPDATED_PATH\""
-            # Заменяем старую строку новой
             sudo sed -i "s|^PATH=.*|$NEW_LINE|" "$FILE"
             echo "Путь $NEW_PATH успешно добавлен в PATH"
             ;;
     esac
 else
-    echo "Ошибка: Переменная PATH не найдена в $FILE" >&2
-    exit 1
+    CURRENT_PATH="${PATH}"
+    case ":${CURRENT_PATH}:" in
+        *":${NEW_PATH}:"*)
+            NEW_LINE="PATH=\"$CURRENT_PATH\""
+            ;;
+        *)
+            UPDATED_PATH="${CURRENT_PATH}:${NEW_PATH}"
+            NEW_LINE="PATH=\"$UPDATED_PATH\""
+            ;;
+    esac
+    echo "$NEW_LINE" | sudo tee -a "$FILE" > /dev/null
+    echo "Создана новая строка PATH: $NEW_LINE"
 fi
 
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
