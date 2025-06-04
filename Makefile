@@ -11,6 +11,7 @@ inst-zsh:
 
 inst-neovim:
 	./install_neovim.sh
+	rm -rf ~/.config/nvim
 
 link:
 	ln -sf $(PWD)/files/nvim ~/.config/nvim
