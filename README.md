@@ -34,3 +34,4 @@ Run `:LazyHealth` after installation. This will load all plugins and check if ev
 * <leader>/ - глобальный поиск
 * <leader><leader> - поиск по каталогу проекта
 * <leader>e - открыть дерево проекта
+* <leader>ft - открыть терминал
