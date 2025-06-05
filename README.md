@@ -28,9 +28,9 @@ Run `:LazyHealth` after installation. This will load all plugins and check if ev
 * `^` - первый символ строки
 * `0` - начало строки
 * `$` - конец строки
-
-### Searching and Navigation
-* `<leader>sr` – replace
-
-### Редактирование
 * `gc` - комментирование
+* [b - следующая вкладка вправо
+* ]b - следующая вкладка влево
+* <leader>/ - глобальный поиск
+* <leader><leader> - поиск по каталогу проекта
+* <leader>e - открыть дерево проекта
