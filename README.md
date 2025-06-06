@@ -24,7 +24,7 @@ Run `:LazyHealth` after installation. This will load all plugins and check if ev
 * `<leader>` – Space
 * `:u` - отмена действия
 * `:e!` - перечитать файл
-* `<leader>sr` - глобальная замена в файле
+* `<leader>sr` - глобальная замена в файле, после ввода надо нажать `/r`
 * `^` - первый символ строки
 * `0` - начало строки
 * `$` - конец строки
