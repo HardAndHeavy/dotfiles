@@ -1,5 +1,5 @@
 # Attention! The int-zsh command must be the last one, because after it is executed, the terminal switches to zsh
-inst: inst-before inst-neovim link inst-zsh
+inst: inst-before inst-docker inst-neovim link inst-zsh
 
 inst-before:
 	sudo apt update
@@ -8,6 +8,9 @@ inst-before:
 inst-zsh:
 	sudo apt install -yy zsh zsh-syntax-highlighting
 	if [ ! -d ~/.oh-my-zsh ]; then sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi
+
+inst-docker:
+	./install_docker.sh
 
 inst-neovim:
 	./install_neovim.sh
@@ -18,7 +21,6 @@ link:
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
-	ln -sf $(PWD)/files/obsidian.desktop ~/.config/autostart/obsidian.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
 
 desktop-link:

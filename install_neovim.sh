@@ -1,3 +1,5 @@
+sudo rm -rf /usr/bin/vi # Удаление старого Vim в Ubuntu
+
 sudo apt install -yy build-essential
 
 FZF_VERSION=$(curl -s "https://api.github.com/repos/junegunn/fzf/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
