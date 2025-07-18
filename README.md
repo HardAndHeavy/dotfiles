@@ -25,7 +25,7 @@ After installation
 sudo reboot
 ```
 
-To personal computer
+Optional for my computers
 ```
 make [name]-link name=[name]
 ```
