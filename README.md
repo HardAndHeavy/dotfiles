@@ -1,10 +1,11 @@
 ## Requirements
 * Ubuntu
-* git (`sudo apt-get install git`)
-* make (`sudo apt-get install make`)
+* git
+* make
 
 ## Setup
 ```sh
+sudo apt-get install -yy git make
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
 make inst-zsh
