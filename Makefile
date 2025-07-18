@@ -3,7 +3,7 @@ inst: inst-before inst-zsh inst-docker inst-neovim link
 inst-before:
 	sudo apt update
 	sudo apt upgrade -yy
-	sudo apt install -yy curl
+	sudo apt install -yy curl unzip
 
 inst-zsh: inst-before
 	sudo apt install -yy zsh zsh-syntax-highlighting

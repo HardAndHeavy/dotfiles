@@ -4,6 +4,8 @@
 * make
 
 ## Setup
+
+Before installation
 ```sh
 sudo apt-get update
 sudo apt-get upgrade -yy
@@ -11,10 +13,19 @@ sudo apt-get install -yy git make
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
 make inst-zsh
+```
+
+Installation
+```sh
 make inst
+```
+
+After installation
+```sh
 sudo reboot
 ```
-to personal computer
+
+To personal computer
 ```
 make [name]-link name=[name]
 ```
