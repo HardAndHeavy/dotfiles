@@ -18,7 +18,7 @@ inst-neovim:
 	./install_neovim.sh
 
 link:
-	mkdir ~/.config
+	mkdir -p ~/.config
 	rm -rf ~/.config/nvim
 	ln -sf $(PWD)/files/nvim ~/.config/nvim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
