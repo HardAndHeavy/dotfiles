@@ -30,11 +30,15 @@ Optional for my computers
 make [name]-link name=[name]
 ```
 
+## Tips
+
+`sudo hostnamectl set-hostname NEW_NAME` - смена имени компьютера
+
 ## Vim
 [LazyVim](https://www.lazyvim.org/)
 Run `:LazyHealth` after installation. This will load all plugins and check if everything is working correctly. 
 
-### Main
+### Hotkeys
 * Switch `<ctrl>` and `<caps lock>`
 * Use `<ctrl> + [` instead of `<Esc>`
 * `<leader>` – Space
