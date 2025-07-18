@@ -6,7 +6,10 @@ inst-before:
 
 inst-zsh:
 	sudo apt install -yy zsh zsh-syntax-highlighting
-	if [ ! -d ~/.oh-my-zsh ]; then sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended; fi
+	if [ ! -d ~/.oh-my-zsh ]; then \
+		RUNZSH=no \
+		sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; \
+		fi
 
 inst-docker:
 	./install_docker.sh
