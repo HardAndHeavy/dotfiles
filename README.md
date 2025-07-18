@@ -7,6 +7,7 @@
 ```sh
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
+make inst-zsh
 make inst
 sudo reboot
 ```

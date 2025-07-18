@@ -2,14 +2,14 @@ inst: inst-before inst-zsh inst-docker inst-neovim link
 
 inst-before:
 	sudo apt update
+	sudo apt upgrade -yy
 	sudo apt install -yy curl
 
-inst-zsh:
+inst-zsh: inst-before
 	sudo apt install -yy zsh zsh-syntax-highlighting
 	if [ ! -d ~/.oh-my-zsh ]; then \
-		RUNZSH=no \
 		sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; \
-		fi
+	fi
 
 inst-docker:
 	./install_docker.sh
