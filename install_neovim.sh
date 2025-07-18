@@ -1,4 +1,6 @@
-sudo rm -rf /usr/bin/vi # Удаление старого Vim в Ubuntu
+# Удаление старого Vim в Ubuntu
+sudo rm -rf /usr/bin/vi 
+sudo rm -rf /opt/nvim-linux-x86_64/bin/nvim
 
 sudo apt install -yy build-essential
 
