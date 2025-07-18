@@ -1,4 +1,4 @@
-inst: inst-before inst-zsh inst-docker inst-neovim link
+inst: inst-before inst-docker inst-neovim link
 
 inst-before:
 	sudo apt update
