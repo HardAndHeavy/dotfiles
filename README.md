@@ -8,6 +8,7 @@
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
 make inst
+sudo reboot
 ```
 to personal computer
 ```

@@ -1,5 +1,4 @@
-# Attention! The int-zsh command must be the last one, because after it is executed, the terminal switches to zsh
-inst: inst-before inst-docker inst-neovim link inst-zsh
+inst: inst-before inst-zsh inst-docker inst-neovim link
 
 inst-before:
 	sudo apt update
@@ -7,7 +6,7 @@ inst-before:
 
 inst-zsh:
 	sudo apt install -yy zsh zsh-syntax-highlighting
-	if [ ! -d ~/.oh-my-zsh ]; then sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi
+	if [ ! -d ~/.oh-my-zsh ]; then sh -c "$$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended; fi
 
 inst-docker:
 	./install_docker.sh
