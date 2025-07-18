@@ -16,10 +16,10 @@ inst-docker:
 
 inst-neovim:
 	./install_neovim.sh
-	rm -rf ~/.config/nvim
 
 link:
 	mkdir ~/.config
+	rm -rf ~/.config/nvim
 	ln -sf $(PWD)/files/nvim ~/.config/nvim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 	mkdir -p ~/.config/autostart
