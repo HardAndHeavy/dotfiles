@@ -19,7 +19,7 @@ inst-neovim:
 	rm -rf ~/.config/nvim
 
 link:
-	mkdir -p ~/.config/nvim
+	mkdir ~/.config
 	ln -sf $(PWD)/files/nvim ~/.config/nvim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 	mkdir -p ~/.config/autostart
