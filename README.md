@@ -1,5 +1,5 @@
 ## Requirements
-* Linux
+* Ubuntu
 * git (`sudo apt-get install git`)
 * make (`sudo apt-get install make`)
 
