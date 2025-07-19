@@ -32,7 +32,10 @@ make [name]-link name=[name]
 
 ## Tips
 
-`sudo hostnamectl set-hostname NEW_NAME` - смена имени компьютера
+* `sudo hostnamectl set-hostname NEW_NAME` - смена имени компьютера
+* `ssh-keygen -f ~/.ssh/id_rsa` - создание ssh ключа
+* `ssh-copy-id -i ~/.ssh/id_rsa.pub root@127.0.0.1` - загрузка ssh ключа на сервер
+* `~/.ssh/config` - файл настройки ssh подключений
 
 ## Vim
 [LazyVim](https://www.lazyvim.org/)
