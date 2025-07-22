@@ -36,6 +36,7 @@ make [name]-link name=[name]
 * `ssh-keygen -f ~/.ssh/id_rsa` - создание ssh ключа
 * `ssh-copy-id -i ~/.ssh/id_rsa.pub root@127.0.0.1` - загрузка ssh ключа на сервер
 * `~/.ssh/config` - файл настройки ssh подключений
+* `:Lazy reload` - перезапуск плагинов при их обновлении
 
 ## Vim
 [LazyVim](https://www.lazyvim.org/)
@@ -60,3 +61,4 @@ Run `:LazyHealth` after installation. This will load all plugins and check if ev
 * `<leader><leader>` - поиск по каталогу проекта
 * `<leader>e` - открыть дерево проекта
 * `<leader>ft` - открыть терминал
+* `<leader>uk` - включение автодополнение. По умолчанию оно выключено
