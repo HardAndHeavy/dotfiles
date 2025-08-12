@@ -33,7 +33,6 @@ desktop-link:
 	sudo ln -sf /data/ydisk/settings/$(name)/hosts /etc/hosts
 
 az-link: desktop-link
-	ln -sf /data/python-data /projects/python-docker/data
 
 buki-link: desktop-link
 
