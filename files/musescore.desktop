@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=MuseScore
+Comment=Нотная программа
+Exec=/data/packages/musescore/MuseScore-Studio.AppImage
+Icon=/data/packages/musescore/app.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+StartupNotify=true

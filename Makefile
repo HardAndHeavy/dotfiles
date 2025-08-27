@@ -28,6 +28,8 @@ link:
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
+	mkdir -p ~/.local/share/applications
+	ln -sf $(PWD)/files/musescore.desktop ~/.local/share/applications/musescore.desktop
 
 desktop-link:
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
