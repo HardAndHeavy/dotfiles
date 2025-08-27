@@ -1,4 +1,4 @@
-inst: inst-before inst-docker inst-neovim link
+inst: inst-before inst-docker inst-neovim inst-base link
 
 inst-before:
 	sudo apt update
@@ -16,6 +16,9 @@ inst-docker:
 
 inst-neovim:
 	./install_neovim.sh
+
+inst-base:
+	./install_base.sh
 
 link:
 	mkdir -p ~/.config
