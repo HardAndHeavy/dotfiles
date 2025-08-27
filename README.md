@@ -27,7 +27,7 @@ sudo reboot
 
 Optional for my computers
 ```
-make [name]-link name=[name]
+make [name]-inst name=[name]
 ```
 
 ## Tips
