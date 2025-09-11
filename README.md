@@ -46,7 +46,7 @@ Run `:LazyHealth` after installation. This will load all plugins and check if ev
 * Switch `<ctrl>` and `<caps lock>`
 * Use `<ctrl> + [` instead of `<Esc>`
 * `<leader>` – Space
-* `:u` - отмена действия
+* `:u` - отмена действия, а `Ctrl + r` - вернуть отмененное действие
 * `:e!` - перечитать файл
 * `<leader>sr` - глобальная замена в файле, после ввода надо нажать `/r`
 * `^` - первый символ строки
