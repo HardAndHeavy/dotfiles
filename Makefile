@@ -12,7 +12,7 @@ inst-zsh: inst-before
 	fi
 
 inst-docker:
-	./install_docker.sh
+	curl -fsSL https://get.docker.com | sh
 
 inst-neovim:
 	./install_neovim.sh
