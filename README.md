@@ -35,6 +35,7 @@ make [name]-inst name=[name]
 * `sudo hostnamectl set-hostname NEW_NAME` - смена имени компьютера
 * `ssh-keygen -f ~/.ssh/id_rsa` - создание ssh ключа
 * `ssh-copy-id -i ~/.ssh/id_rsa.pub root@127.0.0.1` - загрузка ssh ключа на сервер
+* `/etc/ssh/sshd_config` - файл настройки ssh, рекомендуется отключить вход по паролю `PasswordAuthentication no`, а затем `sudo systemctl restart ssh` (или `sudo systemctl restart sshd` для debian)
 * `~/.ssh/config` - файл настройки ssh подключений
 * `:Lazy reload` - перезапуск плагинов при их обновлении
 
