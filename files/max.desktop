@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/opt/MAX/MAX
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=MAX
+Name=MAX
+Comment[en_US]=
+Comment=
