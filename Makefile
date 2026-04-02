@@ -40,7 +40,7 @@ my-link:
 
 az-inst: inst-for-me my-link
 
-buki-lnst: inst-for-me my-link
+buki-inst: inst-for-me my-link
 
 vedi-inst:
 	sudo ln -sf /data/docker /var/lib/docker
