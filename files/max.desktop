@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/opt/MAX/MAX
+Exec=/usr/bin/max
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
