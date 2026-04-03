@@ -3,7 +3,7 @@ sudo apt-get install -y htop
 sudo apt-get install -y vlc # Видеоплеер
 sudo apt-get install -y musescore # Нотная программа
 sudo apt-get install -y ardour # Аудиоредактор
-sudo apt-get install -y blender # Видеоредактор
+sudo snap install blender --channel=5.1/stable --classic # Видеоредактор
 
 # Телеграм
 curl -Lo tsetup.tar.xz https://telegram.org/dl/desktop/linux
