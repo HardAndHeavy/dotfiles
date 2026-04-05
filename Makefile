@@ -37,7 +37,7 @@ my-link:
 	mkdir -p ~/.config/yandex-disk
 	ln -sf /data/ydisk/settings/$(name)/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
 	sudo ln -sf /data/ydisk/settings/$(name)/hosts /etc/hosts
-	sudo ln -sd /data/projects /projects
+	sudo ln -sf /data/projects /projects
 
 az-inst: inst-for-me my-link
 
