@@ -25,13 +25,13 @@ link:
 	rm -rf ~/.config/nvim
 	ln -sf $(PWD)/files/nvim ~/.config/nvim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
+
+my-link:
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
 	mkdir -p ~/.local/share/applications
 	ln -sf $(PWD)/files/musescore.desktop ~/.local/share/applications/musescore.desktop
-
-my-link:
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
 	mkdir -p ~/.config/yandex-disk
 	ln -sf /data/ydisk/settings/$(name)/ydisk-config.cfg ~/.config/yandex-disk/config.cfg

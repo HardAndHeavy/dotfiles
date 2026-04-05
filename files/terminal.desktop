@@ -1,10 +1,6 @@
-# hardandheavy{{
-# Start terminal on login
 [Desktop Entry]
 Type=Application
 Name=Terminal
-Exec=gnome-terminal
-Hidden=false
-NoDisplay=false
+Exec=ptyxis
 X-GNOME-Autostart-enabled=true
-# }}hardandheavy
+NoDisplay=false
