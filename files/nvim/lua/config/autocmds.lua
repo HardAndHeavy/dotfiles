@@ -9,11 +9,12 @@ local function do_sync(filepath)
 
   vim.system(
     { "sh", "-c", string.format(
-      'cd %s && git add . && git commit -m "vault: %s" --no-gpg-sign -q'
-      .. ' && git push -q',
+      'cd %s && '
+      .. 'git add . && '
+      .. 'git commit -m "update: %s" --no-gpg-sign -q && '
+      .. 'git push',
       vim.fn.shellescape(ZK_ROOT),
-      vim.fn.shellescape(filepath),
-      os.date("%Y-%m-%d %H:%M") .. " " .. filename
+      os.date("%Y-%m-%d %H:%M")
     )},
     {},
     function(result)
