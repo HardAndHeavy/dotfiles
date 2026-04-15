@@ -41,7 +41,8 @@ make [name]-inst name=[name]
 
 ## Vim
 [LazyVim](https://www.lazyvim.org/)
-Run `:LazyHealth` after installation. This will load all plugins and check if everything is working correctly. 
+- Run `:LazyHealth` after installation. This will load all plugins and check if everything is working correctly. 
+- Run `:Lazy` to manage plugins
 
 ### Hotkeys
 * Switch `<ctrl>` and `<caps lock>`
