@@ -27,6 +27,8 @@ link:
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
 
 my-link:
+	ln -sf /data/projects ~/projects
+	ln -sf /data ~/data
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop

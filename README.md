@@ -8,8 +8,8 @@
 Before installation
 ```sh
 sudo apt-get update
-sudo apt-get upgrade -yy
-sudo apt-get install -yy git make
+sudo apt-get upgrade -y
+sudo apt-get install -y git make
 git clone https://github.com/HardAndHeavy/dotfiles 
 cd dotfiles
 make inst-zsh

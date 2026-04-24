@@ -1,8 +1,13 @@
-sudo apt-get install -y keepass2
-sudo apt-get install -y htop
-sudo apt-get install -y vlc # Видеоплеер
-sudo apt-get install -y musescore # Нотная программа
-sudo apt-get install -y ardour # Аудиоредактор
-sudo apt-get install -y krita # Графический редактор
-sudo snap install blender --channel=5.1/stable --classic # Видеоредактор
-sudo snap install telegram-desktop
+sudo apt update
+sudo apt install -y \
+  keepass2 \
+  htop \
+  vlc \
+  musescore \
+  ardour \
+  krita \
+  https://repo.yandex.ru/yandex-browser/yandex-browser-stable_amd64.deb \
+  https://repo.yandex.ru/yandex-disk/yandex-disk_latest_amd64.deb
+sudo snap install \
+  blender \
+  telegram-desktop
