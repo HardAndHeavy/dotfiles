@@ -28,6 +28,7 @@ sudo reboot
 Optional for my computers
 ```sh
 make inst-for-me
+make inst-for-provento
 ```
 
 ## Tips

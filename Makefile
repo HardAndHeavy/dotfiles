@@ -38,4 +38,7 @@ my-link:
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
 	mkdir -p ~/.local/share/applications
 	ln -sf $(PWD)/files/musescore.desktop ~/.local/share/applications/musescore.desktop
+
+inst-for-provento:
+	sudo apt install -y freerdp3-x11
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
