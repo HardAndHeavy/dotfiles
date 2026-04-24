@@ -15,7 +15,7 @@ inst-docker:
 	curl -fsSL https://get.docker.com | sudo sh
 
 inst-neovim:
-	sudo ./install_neovim.sh
+	./install_neovim.sh
 
 inst-for-me: my-link
 	./install_for_me.sh
