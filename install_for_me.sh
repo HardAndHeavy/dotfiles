@@ -1,3 +1,6 @@
+git config --global user.name HardAndHeavy
+git config --global user.email HardAndHeavyMetal@yandex.ru
+
 sudo apt update
 sudo apt install -y \
   keepass2 \
