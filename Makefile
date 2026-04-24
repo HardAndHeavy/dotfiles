@@ -2,8 +2,8 @@ inst: inst-before inst-docker inst-neovim link
 
 inst-before:
 	sudo apt update
-	sudo apt upgrade -yy
-	sudo apt install -yy curl unzip
+	sudo apt upgrade -y
+	sudo apt install -y curl unzip
 
 inst-zsh: inst-before
 	sudo apt install -yy zsh zsh-syntax-highlighting
@@ -17,7 +17,7 @@ inst-docker:
 inst-neovim:
 	./install_neovim.sh
 
-inst-for-me:
+inst-for-me: my-link
 	./install_for_me.sh
 
 link:
@@ -35,13 +35,3 @@ my-link:
 	mkdir -p ~/.local/share/applications
 	ln -sf $(PWD)/files/musescore.desktop ~/.local/share/applications/musescore.desktop
 	ln -sf /data/ydisk/Проекты/Провенто ~/provento
-	mkdir -p ~/.config/yandex-disk
-	ln -sf /data/ydisk/settings/$(name)/ydisk-config.cfg ~/.config/yandex-disk/config.cfg
-	sudo ln -sf /data/ydisk/settings/$(name)/hosts /etc/hosts
-
-az-inst: inst-for-me my-link
-
-buki-inst: inst-for-me my-link
-
-vedi-inst:
-	sudo ln -sf /data/docker /var/lib/docker

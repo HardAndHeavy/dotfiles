@@ -26,8 +26,8 @@ sudo reboot
 ```
 
 Optional for my computers
-```
-make [name]-inst name=[name]
+```sh
+make inst-for-me
 ```
 
 ## Tips

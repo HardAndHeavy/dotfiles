@@ -3,7 +3,6 @@ sudo apt install -y \
   keepass2 \
   htop \
   vlc \
-  musescore \
   ardour \
   krita \
   https://repo.yandex.ru/yandex-browser/yandex-browser-stable_amd64.deb \
