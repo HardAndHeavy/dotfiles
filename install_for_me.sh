@@ -9,8 +9,9 @@ sudo snap install \
   telegram-desktop
 
 sudo mkdir -p /usr/share/keyrings
-
 # Yandex Browser
+sudo rm -f /etc/apt/sources.list.d/yandex-browser.list
+sudo rm -f /etc/apt/trusted.gpg.d/yandex-browser.gpg
 printf '%s\n' \
   'Types: deb' \
   'URIs: https://repo.yandex.ru/yandex-browser/deb/' \
@@ -24,6 +25,8 @@ sudo apt update
 sudo apt install -y yandex-browser-stable
 
 # Yandex Disk
+sudo rm -f /etc/apt/sources.list.d/yandex-disk.list
+sudo rm -f /etc/apt/trusted.gpg.d/yandex-disk.gpg
 echo "deb [signed-by=/usr/share/keyrings/yandex-disk.gpg] http://repo.yandex.ru/yandex-disk/deb/ stable main" | \
   sudo tee /etc/apt/sources.list.d/yandex-disk.list > /dev/null
 curl -fsSL https://repo.yandex.ru/yandex-disk/YANDEX-DISK-KEY.GPG | \
