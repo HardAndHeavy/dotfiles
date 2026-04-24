@@ -17,14 +17,18 @@ inst-docker:
 inst-neovim:
 	./install_neovim.sh
 
-inst-for-me: my-link
-	./install_for_me.sh
-
 link:
 	mkdir -p ~/.config
 	rm -rf ~/.config/nvim
 	ln -sf $(PWD)/files/nvim ~/.config/nvim
 	ln -sf $(PWD)/files/.zshrc ~/.zshrc
+
+inst-for-me: set-git-config my-link
+	./install_for_me.sh
+
+set-git-config:
+	git config --global user.name HardAndHeavy
+	git config --global user.email HardAndHeavyMetal@yandex.ru
 
 my-link:
 	ln -sf /data/projects ~/projects

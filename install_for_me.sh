@@ -1,6 +1,3 @@
-git config --global user.name HardAndHeavy
-git config --global user.email HardAndHeavyMetal@yandex.ru
-
 sudo apt install -y \
   keepass2 \
   htop \
