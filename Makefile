@@ -36,6 +36,7 @@ my-link:
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
+	ln -sf $(PWD)/files/max.desktop ~/.config/autostart/max.desktop
 	mkdir -p ~/.local/share/applications
 	ln -sf $(PWD)/files/musescore.desktop ~/.local/share/applications/musescore.desktop
 
