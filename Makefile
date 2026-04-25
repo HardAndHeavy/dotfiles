@@ -13,6 +13,7 @@ inst-zsh: inst-before
 
 inst-docker:
 	curl -fsSL https://get.docker.com | sudo sh
+	sudo usermod -aG docker $(USER)
 
 inst-neovim:
 	./install_neovim.sh
