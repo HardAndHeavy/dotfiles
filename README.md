@@ -22,7 +22,7 @@ make inst
 
 After installation
 ```sh
-sudo reboot
+sudo reboot -f
 ```
 
 Optional for my computers
