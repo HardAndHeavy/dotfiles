@@ -32,8 +32,10 @@ set-git-config:
 	git config --global user.email HardAndHeavyMetal@yandex.ru
 
 my-link:
-	ln -sf /data/projects ~/projects
 	ln -sf /data ~/data
+	ln -sf /data/projects ~/projects
+	ln -sf /data/ydisk ~/ydisk
+	ln -sf /data/projects/zettelkasten ~/zettelkasten
 	mkdir -p ~/.config/autostart
 	ln -sf $(PWD)/files/terminal.desktop ~/.config/autostart/terminal.desktop
 	ln -sf $(PWD)/files/yandex-browser.desktop ~/.config/autostart/yandex-browser.desktop
