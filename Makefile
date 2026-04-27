@@ -33,6 +33,7 @@ set-git-config:
 
 my-link:
 	ln -sf /data ~/data
+	ln -sf /data/projects /projects
 	ln -sf /data/projects ~/projects
 	ln -sf /data/ydisk ~/ydisk
 	ln -sf /data/projects/zettelkasten ~/zettelkasten
