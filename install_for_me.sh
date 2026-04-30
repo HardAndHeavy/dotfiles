@@ -10,7 +10,7 @@ sudo snap install telegram-desktop
 sudo mkdir -p /usr/share/keyrings
 
 # Yandex Browser
-sudo rm -f /etc/apt/sources.list.d/yandex-browser.list
+sudo rm -f /etc/apt/sources.list.d/yandex-browser.sources
 sudo rm -f /usr/share/keyrings/yandex-browser.gpg
 printf '%s\n' \
   'Types: deb' \
